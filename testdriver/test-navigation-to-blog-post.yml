@@ -1,0 +1,38 @@
+version: 4.1.30
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Click on a blog post title.
+    commands:
+      - command: hover-text
+        text: 使用 ChatGPT 定制团队专属 ESLint 规则集
+        description: blog post title
+        action: click
+  - prompt: Assert that the blog post page loads successfully.
+    commands:
+      - command: assert
+        expect: 使用 ChatGPT 定制团队专属 ESLint 规则集 is visible on the page
+  - prompt: Assert that the blog post page loads successfully.
+    commands:
+      - command: assert
+        expect: the blog post page is visible
+  - prompt: Assert that the blog post page loads successfully.
+    commands:
+      - command: assert
+        expect: the blog post page is visible
+  - prompt: Assert that the blog post page loads successfully.
+    commands:
+      - command: assert
+        expect: the blog post page is visible
+  - prompt: Assert that the blog post page loads successfully.
+    commands:
+      - command: assert
+        expect: the blog post page is visible
+  - prompt: Assert that the blog post page loads successfully.
+    commands:
+      - command: assert
+        expect: the blog post page is visible
+  - prompt: Assert that the blog post page loads successfully.
+    commands:
+      - command: assert
+        expect: the blog post page is visible
