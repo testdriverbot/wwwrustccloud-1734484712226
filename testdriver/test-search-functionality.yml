@@ -1,0 +1,29 @@
+version: 4.1.30
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: rust.cloud
+        description: URL bar in the browser
+        action: click
+  - prompt: Click the search input field and enter a search query.
+    commands:
+      - command: hover-text
+        text: rust.cloud
+        description: URL bar in the browser
+        action: click
+      - command: type
+        text: example search query
+  - prompt: Press enter to execute the search.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: >-
+      Assert that search results are displayed correctly.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: Rust Compiler Development Guide is visible in the search results
